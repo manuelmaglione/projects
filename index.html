@@ -1,87 +1,184 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-    <title>Programa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <p class="logo">
-                Programa</p>
-            <nav>
-                <a href=#somos-pro>Quienes somos</a>
-                <a href="">Nuestros programas</a>
-                <a href="">Caracteristicas</a>
-            </nav>
-        </div>
-    </header>
+    <nav id="navbar">
+        <header>Python Documentación</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduccion">Introduccion</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Invocacion">Invocacion del intérprete Python</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Numericos">Tipos de datos numéricos</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#El_valor">El valor</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Cadenas">Cadenas</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Funciones">Funciones</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Bibliotecas">Bibliotecas</a>
+            </li>
+        </ul>
+    </nav>
 
-    <section id="hero">
-        <h1>Aprende a programar <br>con los mejores</h1>
-        <button>Aplica ya</button>
-    </section>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+            <header>Introduccion</header>
+            <article>
+                <p>Python es el lenguaje de programación que utilizaremos para las prácticas de la asignatura.
+                Algunas de las características que lo hacen interesante para nosotros son:</p>
+                <ul>
+                    <li>Es fácil de utilizar</li><br>
+                    <li>Es un lenguaje completo; no sirve sólo para programar scripts</li><br>
+                    <li>Tiene gran variedad de estructuras de datos incoporadas al propio lenguaje</li><br>
+                    <li>Tiene gran cantidad de Bibliotecas(librerias)</li><br>
+                    <li>Permite la programación modular, orientada a objetos y su uso como lenguaje tradicional</li><br>
+                    <li>Es interpretado.Esto facilita el desarrollo</li><br>
+                    <li>Se puede utilizar desde un entorno interactivo</li><br>
+                    <li>Se puede entender fácilmente</li><br>
+                    <li>Es muy expresivo</li>
+                </ul>
+                <p>Este cuaderno pretende presentar los conceptos básicos de Python y capacitarte para comenzar
+                    a utilizarlo. Esto no supone que todas las características interesantes del lenguaje (ni siquiera todas
+                    las útiles para la realización de las prácticas) hayan sido exhaustivamente recogidas aquí.</p>
+            </article>
+        </section>
+    
+        <section class="main-section" id="Invocacion">
+            <header>Invocacion del intérprete Python</header>
+            <article>
+                <p>
+                    Python suele estar instalado en /usr/local/bin o en /usr/bin, así que para invocar al
+                    intérprete interactivo basta con escribir 
+                </p>
+                <p> 
+                    <code>$ python</code> 
+                </p>  
+                <p>
+                    El sistema arrancará con un mensaje parecido a:
+                    <br> 
+                    <code>Python 2.4.3 (#1, May 24 2008, 13:47:28)
+                    [GCC 4.1.2 20070626 (Red Hat 4.1.2-14)] on linux2
+                    Type "help", "copyright", "credits" or "license" for more information.
+                    >>> </code>
+                    
+                </p>
+                
+                <p>
+                    Esto nos permite empezar a trabajar (>>> es el prompt del intérprete). Para salir del intérprete
+                    interactivo tenemos que pulsar Ctrl+D. <br>
+                    Si hemos almacenado un programa Python en un fichero (p.ej. fich.py), podemos ejecutarlo
+                    con la orden <br>
+                        <code>$ python fich.py</code>
+                </p>
+                <p>
+                    Si nuestro sistema lo permite, también podemos ejecutar el programa directamente si, además
+                    de dar permisos de ejecución al fichero, escribimos como primera línea del fichero los caracteres
+                    #! seguidos de la ruta completa del intérprete Python. Así, si el intérprete está en /usr/bin,
+                    escribiríamos: <br><br>
+                        <code>#!/usr/bin/python</code>  <br><br>
+                    Si el sistema está razonablemente bien instalado, también se puede utilizar: <br><br>
+                        <code>#!/usr/bin/env python</code>  <br><br>
+                    Esto tiene la ventaja de que no depende de la situación exacta de Python.
+                </p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="Numericos">
+            <header>Tipos de datos numéricos</header>
+            <article>
+                <p>
+                    Es posible usar Python como una calculadora avanzada. Para ello, una vez arrancado el interprete, basta con escribir una expresion tras el prompt. El interprete calculara el resultado, lo
+                    escribira y presentara un nuevo prompt
+                </p>
+                <p>
+                    Python sigue las reglas habituales de precedencia y asociatividad; ademas, el operador potencia
+                    (**) es asociativo a derechas y mas prioritario que el menos unario (-2**2 devuelve -4). <br>
+                    Para realizar operaciones logicas tenemos los operadores and, or y not. Los valores que devuelven son:
+                </p>
+                <ul>
+                    <li>El operador and devuelve su primer operando si este es falso y el segundo en caso contrario</li> <br>
+                    <li>El operador or devuelve su primero operando si este es cierto y el segundo en caso contrario</li> <br>
+                    <li>El operador not devuelve False si su operando es cierto y True si es falso</li>
+                </ul>
+            </article>
+        </section>
 
-    <section id="somos-pro">
-        <div class="container">
-            <div class="img-conteiner"></div>
-                <h2>Somos <span class="color-acento">programa</span> </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus numquam dicta dignissimos tempore distinctio, e
-                speriores fugit corrupti mollitia quo impedit alias aut 
-                eos ducimus assumenda quos praesentium sed tenetur ad? </p>
-        </div>
-    </section>
-
-    <section id="nuestros-programas">
-        <div class="container">
-            <h2>Nuestros Programas</h2>
-            <div class="carta">
-                <h3>Programador Front-end</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Esse suscipit fuga voluptatem deserunt officia saepe! Provident
-                iure quidem beatae similique eveniet maiores mollitia iusto nobis 
-                repudiandae, temporibus, optio consectetur. Repudiandae?</p>
-                <button>+ Info</button>
-            </div>
-            <div class="carta">
-                <h3>Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Esse suscipit fuga voluptatem deserunt officia saepe! Provident
-                iure quidem beatae similique eveniet maiores mollitia iusto nobis 
-                repudiandae, temporibus, optio consectetur. Repudiandae?</p>
-                <button>+ Info</button>
-            </div>
-            <div class="carta">
-                <h3>Programador FullStack</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Esse suscipit fuga voluptatem deserunt officia saepe! Providen
-                t iure quidem beatae similique eveniet maiores mollitia iusto nobis 
-                repudiandae, temporibus, optio consectetur. Repudiandae?</p>
-                <button>+ Info</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="caracteristicas">
-        <div class="container">
-            <ul><li>100% Online</li>
-            <li>Flexibilidad horaria</li>
-            <li>Soporte</li>
-            <li>Asistencia</li></ul>
+        <section class="main-section" id="El_valor">
+            <header>El valor None</header>
+            <article>
+                <p>
+                Existe un valor especial en Python para representar aquellos casos en los que “no hay valor”;
+                logicas y es el devuelto por las funciones que no devuelven ningun valor explicitamente. Cuando
+                es el valor None. Este valor es el unico de su tipo. Se interpreta como falso en las expresiones
+                el resultado de una expresion es None, el interprete no lo muestra:
+                </p>
+                <code>>>> None 
+                >>>
+                </code>
+            </article>
             
-        </div>
-    </section>
+        </section>
 
-    <section id="aplicaya">
-        <h2>Listo para programar?</h2>
-        <button>Aplica</button>
-    </section>
+        <section class="main-section" id="Cadenas">
+            <header>Cadenas</header>
+            <article>
+                <p>
+                    Python tambien trabaja con cadenas. Para escribirlas, hay que proporcionar una secuencia de
+                    se escriben las comillas en la cadena: si el delimitador es una comilla doble, las comillas dobles se
+                    caracteres encerrada entre comillas simples o dobles. La eleccion del delimitador solo afecta a como
+                    sencilla, las comillas sencillas deberan ir escapadas
+                    escribiran escapandolas con una barra invertida (\); analogamente, si el delimitador es una comilla
+                </p>
+            </article>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p> &copy; programa2022</p>
-        </div>
-    </footer>
+        <section class="main-section" id="Funciones">
+            <header>Funciones</header>
+            <article>
+                <p>
+                    Python permite definir funciones con una sintaxis muy sencilla: tras la palabra reservada def
+                    lineas que se encuentran a continuacion formaran el cuerpo de la funcion. Por ejemplo, si en el
+                    se escribe el nombre de la funcion, el nombre de los parametros entre parentesis y dos puntos. Las
+                    fichero fibonacci.py 
+                </p>
+                
+            </article>
+        </section>
+        
+        <section class="main-section" id="Bibliotecas">
+            <header>Bibliotecas</header>
+            <article>
+                <p>
+                    Una de las ventajas de Python es la gran cantidad de objetos y funciones que hay disponibles
+                    en forma de bibliotecas (o modulos). Para acceder a las funciones de una biblioteca, tenemos varias
+                    opciones
+                </p>
+                <ul>
+                    <li>sys</li> <br>
+                    <li>types</li> <br>
+                    <li>string</li> <br>
+                    <li>re</li> <br>
+                    <li>math</li> <br>
+                    <li>tempfile</li> 
+                </ul>
+
+            </article>
+        </section>
+    </main>
 </body>
 </html>
